@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>HTML Tables</title>
+		<meta charset="utf-8">
+	</head>
+<body>
+	<h1>Tables</h1>
+	<p>Grid Like Matrix of content with columns and rows<br>
+	<em>(Also useful for page layout.)</em></p> 
+	
+	<h3>Simple Table</h3>
+	<p>Form a grid with all cells filled equally</p>
+	<table border="1">
+		<tr>
+			<td>top-left</td>
+			<td>top-middle</td>
+			<td>top-right</td>
+		</tr>
+		<tr>
+			<td>mid-left</td>
+			<td>mid-middle</td>
+			<td>mid-right</td>
+		</tr>
+		<tr>
+			<td>bot-left</td>
+			<td>bot-middle</td>
+			<td>bot-right</td>
+		</tr>
+	</table>
+	<h3>Sectioned Table</h3>
+	<p>Seperate sections hold captions, head, foot, and body.</p>
+	<table border="3">
+		<caption>Caption For This Table</caption>
+		<thead>
+			<tr>
+				<th>Day</th>
+				<th>High</th>
+				<th>Low</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td>AVERAGE</td>
+				<td>19</td>
+				<td>12</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>Monday</td>
+				<td>20</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>Wednesday</td>
+				<td>18</td>
+				<td>14</td>
+			</tr>
+		</tbody>
+	</table>
+	<h3>Irregular Table</h3>
+	<p>Areas for table cells span columns and rows</p>
+	<table border="1">
+		<tr>
+			<td colspan="2">1,2</td>
+			<td colspan="2" rowspan="2">3,4,7,8</td>
+		</tr>
+		<tr>
+			<td rowspan="2">5<br>9</td> <td>6</td>
+		</tr>
+		<tr>
+			<td>10</td> <td>11</td> <td>12</td>
+		</tr>
+	</table>
+</body>
+</head>
